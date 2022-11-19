@@ -130,4 +130,32 @@ main {
   right: 0;
   left: 0;
   bottom: 0;
+}
+.card-item .card-inner .card-short-info {
+  flex-grow: 1;
+}
+.card-item .card-inner .card-short-info .card-title {
+  color: #334455;
+  font-size: 1.2rem;
+}
+.card-item .card-inner .card-short-info .card-price {
+  color: #7d8a91;
+  font-size: 1rem;
+}
+.card-item .card-inner .btn-card-more-info {
+  cursor: pointer;
+  background-color: transparent;
+  border: 2px solid #1a1a1a;
+  border-radius: 15px;
+  color: #404040;
+  font-family: Roobert, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 16px;
+  font-weight: 600;
+  padding: 8px 12px;
+  text-align: center;
+}
+.card-item .card-inner .btn-card-more-info:hover {
+  color: #fff;
+  background-color: #1a1a1a;
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
 }/*# sourceMappingURL=styles.css.map */
