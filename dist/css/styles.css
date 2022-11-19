@@ -47,4 +47,49 @@ header .header-bottom .nav-links .nav-items a:hover {
 header .header-bottom .nav-links .current-nav a {
   background-color: black;
   color: white;
+}
+
+main {
+  min-height: 85vh;
+}
+main .hero-banner {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/assets/hero-cap.jpg");
+  height: 60vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .hero-banner-inner {
+  text-align: center;
+  position: absolute;
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 1rem;
+}
+main .hero-banner-inner .hero-banner-h2 {
+  font-size: 3.5rem;
+}
+main .hero-banner-inner .hero-banner-span {
+  font-size: 1.5rem;
+}
+main .hero-banner-inner button {
+  align-self: center;
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 10px 25px;
+  color: black;
+  background-color: #ddd;
+  text-align: center;
+  cursor: pointer;
+}
+main .hero-banner-inner button:hover {
+  background-color: #555;
+  color: white;
 }/*# sourceMappingURL=styles.css.map */
