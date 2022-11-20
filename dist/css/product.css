@@ -53,13 +53,14 @@ main {
   border: solid goldenrod 1px;
   min-height: 80vh;
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 0.3fr 1fr 1fr 0.3fr;
 }
 main .product-images {
-  padding: 1rem;
-  border: solid saddlebrown 1px;
+  padding-top: 1rem;
   display: flex;
+  justify-content: space-around;
   flex-wrap: wrap;
+  min-width: 420px;
   gap: 1rem;
 }
 
@@ -67,10 +68,10 @@ main .product-images {
 .product-img-2,
 .product-img-3,
 .product-img-4 {
-  flex-basis: 45%;
-  border: solid black 2px;
-  background: url(/assets/cap-item-1.jpg);
-  background-size: cover;
+  cursor: pointer;
+  min-width: 250px;
+  border: solid black 5px;
+  border-radius: 1rem;
   transition: all 0.2s ease-in-out;
 }
 .product-img-1:hover,
@@ -78,4 +79,28 @@ main .product-images {
 .product-img-3:hover,
 .product-img-4:hover {
   transform: scale(1.1);
+}
+
+.product-img-1 {
+  background: url(/assets/cap-item-1.jpg);
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
+.product-img-2 {
+  background: url(/assets/girl-brown-cap.jpg);
+  background-size: 100% 100%;
+}
+
+.product-img-3 {
+  background: url(/assets/dude-brown-cap.jpg);
+  background-position: top;
+}
+
+.product-img-4 {
+  background: url(/assets/cap-item-1.jpg);
+  background-position: center;
+  background-color: grey;
+  background-blend-mode: multiply;
 }/*# sourceMappingURL=product.css.map */
