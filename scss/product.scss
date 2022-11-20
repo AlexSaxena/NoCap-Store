@@ -7,6 +7,38 @@
 }
 body {
   min-height: 100vh;
-  padding-bottom: 2rem;
   // border: solid rebeccapurple 5px;
+}
+
+main {
+  border: solid goldenrod 1px;
+  min-height: 80vh;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  // grid-template-columns: repeat(2, 1fr);
+  & .product-images {
+    padding: 1rem;
+    border: solid saddlebrown 1px;
+    // display: grid;
+    // grid-template-columns: repeat(2, 1fr);
+    // grid-template-rows: repeat(2, 1fr);
+    // place-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+}
+
+.product-img-1,
+.product-img-2,
+.product-img-3,
+.product-img-4 {
+  flex-basis: 45%;
+  border: solid black 2px;
+  background: url(/assets/cap-item-1.jpg);
+  background-size: cover;
+  transition: all 0.2s ease-in-out;
+  &:hover {
+    transform: scale(1.1);
+  }
 }

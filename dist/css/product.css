@@ -47,5 +47,35 @@ header .header-bottom .nav-links .current-nav a {
 
 body {
   min-height: 100vh;
-  padding-bottom: 2rem;
+}
+
+main {
+  border: solid goldenrod 1px;
+  min-height: 80vh;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+main .product-images {
+  padding: 1rem;
+  border: solid saddlebrown 1px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.product-img-1,
+.product-img-2,
+.product-img-3,
+.product-img-4 {
+  flex-basis: 45%;
+  border: solid black 2px;
+  background: url(/assets/cap-item-1.jpg);
+  background-size: cover;
+  transition: all 0.2s ease-in-out;
+}
+.product-img-1:hover,
+.product-img-2:hover,
+.product-img-3:hover,
+.product-img-4:hover {
+  transform: scale(1.1);
 }/*# sourceMappingURL=product.css.map */
