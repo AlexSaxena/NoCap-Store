@@ -20,6 +20,15 @@ $(document).ready(function () {
   $(".toggle-card-6").click(function () {
     extendCard(this, 6);
   });
+  $(".toggle-card-7").click(function () {
+    extendCard(this, 7);
+  });
+  $(".toggle-card-8").click(function () {
+    extendCard(this, 8);
+  });
+  $(".toggle-card-9").click(function () {
+    extendCard(this, 9);
+  });
 
   function extendCard(btnTag, cardNum) {
     $(".slide-more-info-" + cardNum).slideToggle();
