@@ -1,14 +1,3 @@
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-
-body {
-  min-height: 100vh;
-  padding-bottom: 2rem;
-}
-
 header {
   border-bottom: solid black 5px;
   padding: 2rem 2rem 0px 2rem;
@@ -48,6 +37,17 @@ header .header-bottom .nav-links .nav-items a:hover {
 header .header-bottom .nav-links .current-nav a {
   background-color: black;
   color: white;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  padding-bottom: 2rem;
 }
 
 main {
