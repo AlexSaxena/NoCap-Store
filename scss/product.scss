@@ -27,6 +27,8 @@ main {
     gap: 1rem;
   }
 }
+
+// Mixin Maybe?
 .product-img-1,
 .product-img-2,
 .product-img-3,
@@ -67,5 +69,39 @@ main {
   background-blend-mode: multiply;
   @media only screen and (max-width: 650px) {
     display: none;
+  }
+}
+// Details Section
+.product-details {
+  display: flex;
+  height: 60%;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.product-details-top-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+  & .product-desc {
+    color: rgb(75, 75, 75);
+    width: 80%;
+  }
+}
+.size-container {
+  display: flex;
+  gap: 1rem;
+  & div {
+    border: solid black 1px;
+    height: 4rem;
+    width: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &:hover {
+      background-color: #000;
+      color: #fff;
+    }
   }
 }
