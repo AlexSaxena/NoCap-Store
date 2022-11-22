@@ -110,4 +110,12 @@ form input[type=submit] {
 }
 form input[type=submit]:hover {
   background-color: #be1635;
+}
+form .input-img-container {
+  margin-top: 5px;
+  display: flex;
+  flex-wrap: wrap;
+}
+form .input-img-container .addImage {
+  flex-basis: 50%;
 }/*# sourceMappingURL=addCap.css.map */

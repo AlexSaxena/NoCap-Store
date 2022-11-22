@@ -64,4 +64,12 @@ form {
       background-color: #be1635;
     }
   }
+  & .input-img-container {
+    margin-top: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    & .addImage {
+      flex-basis: 50%;
+    }
+  }
 }
