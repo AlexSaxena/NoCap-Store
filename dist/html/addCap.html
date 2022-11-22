@@ -25,6 +25,63 @@
         </ul>
       </nav>
     </header>
-    <h1>Add New Cap</h1>
+    <main>
+      <div class="page-heading">
+        <h1>Add New Cap</h1>
+        <h2>Signed In As: Admin</h2>
+      </div>
+      <section class="form-container">
+        <div class="form-wrapper">
+          <h3 class="form-intro">New Product</h3>
+          <form method="post" action="#">
+            <label for="article-name">Article Name</label>
+            <input
+              type="text"
+              id="article-name"
+              name="article-name"
+              placeholder="Article Name.."
+              required
+            />
+            <label for="article-brand">Article Brand</label>
+            <input
+              type="text"
+              id="article-brand"
+              name="article-brand"
+              placeholder="Brand.."
+              required
+            />
+            <label for="article-number">Article Number</label>
+            <input
+              type="number"
+              id="article-number"
+              name="article-number"
+              placeholder="0123456789"
+              required
+            />
+            <label for="article-price">Article Price</label>
+            <input
+              type="number"
+              id="article-price"
+              name="article-price"
+              placeholder="299"
+            />
+            <label for="article-category">Category</label>
+            <select id="article-category" name="article-category">
+              <option value="regular">Regular</option>
+              <option value="snapback">Snapback</option>
+              <option value="other">Other</option>
+            </select>
+            <label for="article-description">Description</label>
+            <textarea
+              id="article-description"
+              name="article-description"
+              placeholder="Enter A Description...."
+              rows="3"
+            ></textarea>
+            <input type="submit" role="button" value="Add Article" />
+          </form>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
