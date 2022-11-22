@@ -7,19 +7,16 @@
 }
 body {
   min-height: 100vh;
-  // border: solid rebeccapurple 5px;
 }
 
 main {
-  border: solid goldenrod 1px;
   min-height: 80vh;
   margin-left: 3rem;
-
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+
   & .product-images {
     padding: 1rem;
-    // border: solid saddlebrown 1px;
     margin-top: 1rem;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
