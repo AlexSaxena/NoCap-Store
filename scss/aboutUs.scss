@@ -2,6 +2,7 @@
 
 @mixin flex-container {
   margin-top: 2rem;
+  margin-bottom: 2rem;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -49,29 +50,76 @@ main {
   }
   & .who-are-we-desc {
     width: 60%;
-    font-size: 1.3em;
+    font-size: 1.5em;
     color: #747474;
   }
 }
 .ceo-container {
   @include flex-container();
-  flex-direction: row;
-  & .ceo-img {
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    padding: 5px;
-    width: 150px;
-  }
-  & .ceo-info {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
 
-    & .ceo-title {
+  flex-direction: row;
+  gap: 10rem;
+  & .ceo-inner {
+    display: flex;
+    & .ceo-img {
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      padding: 5px;
+      width: 150px;
+    }
+    & .ceo-info {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+
+      & .ceo-title {
+        font-size: 2rem;
+      }
+    }
+  }
+  & .ceo-quote-container {
+    align-self: flex-start;
+    width: 20%;
+
+    & .ceo-quote-title {
       font-size: 2rem;
+      font-weight: 800;
+      margin-bottom: 1rem;
+    }
+    & .ceo-quote-p {
+      width: 25rem;
+      font-size: 1.4em;
+      color: #747474;
     }
   }
 }
 .team-section {
   @include flex-container();
+  & .team-inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 80%;
+    & .team-info {
+      @include flex-container();
+      justify-content: flex-start;
+      & .team-title {
+        font-size: 1.5rem;
+      }
+      & .team-info-p {
+        width: 30rem;
+        font-size: 1.4em;
+        color: #747474;
+      }
+    }
+
+    & .team-image {
+      max-width: 100%;
+      height: auto;
+      min-height: 225px;
+      border-radius: 40px;
+      border: solid orange 1px;
+    }
+  }
 }

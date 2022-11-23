@@ -57,6 +57,7 @@ main {
 
 .title-container {
   margin-top: 2rem;
+  margin-bottom: 2rem;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -82,6 +83,7 @@ main {
 
 .who-are-we {
   margin-top: 2rem;
+  margin-bottom: 2rem;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -95,41 +97,94 @@ main {
 }
 .who-are-we .who-are-we-desc {
   width: 60%;
-  font-size: 1.3em;
+  font-size: 1.5em;
   color: #747474;
 }
 
 .ceo-container {
   margin-top: 2rem;
+  margin-bottom: 2rem;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   gap: 1rem;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
   flex-direction: row;
+  gap: 10rem;
 }
-.ceo-container .ceo-img {
+.ceo-container .ceo-inner {
+  display: flex;
+}
+.ceo-container .ceo-inner .ceo-img {
   border: 1px solid #ddd;
   border-radius: 4px;
   padding: 5px;
   width: 150px;
 }
-.ceo-container .ceo-info {
+.ceo-container .ceo-inner .ceo-info {
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
-.ceo-container .ceo-info .ceo-title {
+.ceo-container .ceo-inner .ceo-info .ceo-title {
   font-size: 2rem;
+}
+.ceo-container .ceo-quote-container {
+  align-self: flex-start;
+  width: 20%;
+}
+.ceo-container .ceo-quote-container .ceo-quote-title {
+  font-size: 2rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+}
+.ceo-container .ceo-quote-container .ceo-quote-p {
+  width: 25rem;
+  font-size: 1.4em;
+  color: #747474;
 }
 
 .team-section {
   margin-top: 2rem;
+  margin-bottom: 2rem;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   gap: 1rem;
+}
+.team-section .team-inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 80%;
+}
+.team-section .team-inner .team-info {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  justify-content: flex-start;
+}
+.team-section .team-inner .team-info .team-title {
+  font-size: 1.5rem;
+}
+.team-section .team-inner .team-info .team-info-p {
+  width: 30rem;
+  font-size: 1.4em;
+  color: #747474;
+}
+.team-section .team-inner .team-image {
+  max-width: 100%;
+  height: auto;
+  min-height: 225px;
+  border-radius: 40px;
+  border: solid orange 1px;
 }/*# sourceMappingURL=aboutUs.css.map */
