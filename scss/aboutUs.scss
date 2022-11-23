@@ -1,5 +1,15 @@
 @import "navbar";
 
+@mixin flex-container {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -14,13 +24,7 @@ main {
   min-width: 99vw;
 }
 .title-container {
-  margin-top: 2rem;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  gap: 1rem;
+  @include flex-container();
   & .about-us-title {
     font-family: monospace;
     font-size: 3rem;
@@ -38,12 +42,7 @@ main {
   }
 }
 .who-are-we {
-  margin-top: 2rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 1rem;
+  @include flex-container();
   & .who-are-we-title {
     font-family: monospace;
     font-size: 2rem;
@@ -55,11 +54,8 @@ main {
   }
 }
 .ceo-container {
-  margin-top: 2rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 1rem;
+  @include flex-container();
+  flex-direction: row;
   & .ceo-img {
     border: 1px solid #ddd;
     border-radius: 4px;
@@ -75,4 +71,7 @@ main {
       font-size: 2rem;
     }
   }
+}
+.team-section {
+  @include flex-container();
 }

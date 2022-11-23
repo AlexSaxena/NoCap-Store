@@ -84,6 +84,7 @@ main {
   margin-top: 2rem;
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   gap: 1rem;
@@ -101,9 +102,12 @@ main {
 .ceo-container {
   margin-top: 2rem;
   display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   gap: 1rem;
+  flex-direction: row;
 }
 .ceo-container .ceo-img {
   border: 1px solid #ddd;
@@ -118,4 +122,14 @@ main {
 }
 .ceo-container .ceo-info .ceo-title {
   font-size: 2rem;
+}
+
+.team-section {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
 }/*# sourceMappingURL=aboutUs.css.map */
