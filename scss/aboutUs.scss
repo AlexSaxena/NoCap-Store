@@ -5,3 +5,74 @@
   margin: 0;
   box-sizing: border-box;
 }
+body {
+  min-height: 100vh;
+  background-color: #f9f9f9;
+}
+main {
+  min-height: 100vh;
+  min-width: 99vw;
+}
+.title-container {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  & .about-us-title {
+    font-family: monospace;
+    font-size: 3rem;
+  }
+  & .f-italic {
+    font-style: italic;
+  }
+  & .title-divider {
+    min-width: 40%;
+  }
+  & .title-tagline {
+    font-family: monospace;
+    font-size: 2rem;
+    color: rgb(66, 143, 195);
+  }
+}
+.who-are-we {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  & .who-are-we-title {
+    font-family: monospace;
+    font-size: 2rem;
+  }
+  & .who-are-we-desc {
+    width: 60%;
+    font-size: 1.3em;
+    color: #747474;
+  }
+}
+.ceo-container {
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  & .ceo-img {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    width: 150px;
+  }
+  & .ceo-info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    & .ceo-title {
+      font-size: 2rem;
+    }
+  }
+}
