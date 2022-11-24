@@ -4,7 +4,15 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CDN JQuery -->
+    <script
+      src="https://code.jquery.com/jquery-3.6.1.min.js"
+      integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+      crossorigin="anonymous"
+    ></script>
+    <!-- CDN JQuery -->
     <link rel="stylesheet" href="/dist/css/aboutUs.css" />
+    <script src="/dist/javascript/script.js" defer></script>
     <title>About Us</title>
   </head>
   <body>
@@ -92,7 +100,7 @@
       <section class="contact-form-section">
         <h6 class="contact-form-title">Want to get in touch?</h6>
         <p class="contact-form-p">Contact us!</p>
-        <form class="contact-form">
+        <form class="contact-form" name="myForm">
           <label for="name">Your Name</label>
           <input
             type="text"
@@ -117,8 +125,12 @@
             rows="3"
             required
           ></textarea>
-          <button type="submit" class="btn-contact-form">Send!</button>
+          <input type="submit" class="btn-contact-form" />
         </form>
+        <p class="contact-answer">
+          Thank you for you message! <br />
+          We will get back to you soon!
+        </p>
       </section>
     </main>
   </body>
