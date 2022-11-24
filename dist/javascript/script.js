@@ -38,4 +38,13 @@ $(document).ready(function () {
       $(btnTag).text("Show More");
     }
   }
+
+  $(".contact-form").submit(function (e) {
+    alert("Message has been sent!");
+    $(".contact-form").hide();
+    $(".contact-form-title").hide();
+    $(".contact-form-p").hide();
+    $(".contact-answer").show();
+    e.preventDefault();
+  });
 });
