@@ -196,6 +196,7 @@ main {
   align-items: center;
   gap: 20px;
   background-color: rgb(166, 68, 7);
+  min-height: 30rem;
 }
 .contact-form-section .contact-form-title {
   font-size: 3rem;
@@ -230,7 +231,7 @@ main {
   box-sizing: border-box;
   font-size: 1.5rem;
 }
-.contact-form-section .contact-form button[type=submit] {
+.contact-form-section .contact-form input[type=submit] {
   width: 100%;
   background-color: #e21339;
   color: white;
@@ -241,6 +242,11 @@ main {
   font-size: 1.2rem;
   cursor: pointer;
 }
-.contact-form-section .contact-form button[type=submit]:hover {
+.contact-form-section .contact-form input[type=submit]:hover {
   background-color: #be1635;
+}
+.contact-form-section .contact-answer {
+  display: none;
+  margin: auto;
+  font-size: 4rem;
 }/*# sourceMappingURL=aboutUs.css.map */
